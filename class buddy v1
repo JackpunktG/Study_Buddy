@@ -41,7 +41,7 @@ int main()
 		if (options == 2) {
 			options = line_count;								//holds the line_count
 				while (line_count >= 0) {
-					printf("%s\n", saved_lines[line_count]);			//print allinputs
+					printf("%s\n", saved_lines[line_count]);			//print all inputs
 					--line_count;
 				}
 				line_count = options;							//gives back the line_count
@@ -55,7 +55,7 @@ int main()
 						perror("Error opening file");
 						return 1;
 					}
-					for (int y = 0; y < line_count; y++) {				//Prints output to the file
+					for (int y = 0; y < line_count; y++) {				//Prints output to a text file
 						fprintf(file, "%s", saved_lines[y]);
 					}
 					fclose(file);
