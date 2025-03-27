@@ -30,9 +30,9 @@ int main()
 		if (options == 1) {						//registering the input and saving each line to a new y-coordinand in array
 			printf("input mode -- don't start with nummber :( *feature coming soon\n-2 to exit\n\n");
 			while (fgets(current_line, sizeof(current_line), stdin) != NULL) {
-			copy(saved_lines[line_count], current_line);
-			scanf("%d",  &options);
-			++line_count;
+				copy(saved_lines[line_count], current_line);
+				scanf("%d",  &options);
+				++line_count;
 				if (options == -2){
 					break;
 				}
@@ -41,8 +41,8 @@ int main()
 		if (options == 2) {
 			options = line_count;								//holds the line_count
 				while (line_count >= 0) {
-				printf("%s\n", saved_lines[line_count]);			//print allinputs
-				--line_count;
+					printf("%s\n", saved_lines[line_count]);			//print allinputs
+					--line_count;
 				}
 				line_count = options;							//gives back the line_count
 		}		
