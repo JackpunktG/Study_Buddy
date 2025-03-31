@@ -19,7 +19,7 @@ int main()
 	int options;
 	int line_count;
 	char current_line [MAX_LENGTH];
-	char saved_lines [100][MAX_LENGTH];
+	char saved_lines [200][MAX_LENGTH];
 		
 	options = 0;
 	line_count = 0;
@@ -50,7 +50,7 @@ int main()
 			printf("\nSave?\n1 -- Yes\n2 -- No\n\n");
 			scanf("%d", &options);
 				if (options == 1) {	
-				FILE *file = fopen("Study Buddy - REMANE ME.txt", "w");  // Opens Text file
+				FILE *file = fopen("Study Buddy - REMANE ME WITH NO BLANK SPACES.txt", "w");  // Opens Text file
 					if (file == NULL) {
 						perror("Error opening file");
 						return 1;
