@@ -13,7 +13,7 @@ unsigned int gen_seed()					// Random number seed generation
 {
 	clock_t start, end;
 	int multip1;
-	int	result1;
+	int result1;
 	time_t current_time, current_time2;
 	double rand;
 	int a, b = 0;
