@@ -37,8 +37,8 @@ unsigned int gen_seed()					// Random number seed generation
 		rand = rand / 305;
 
 		int rando_number = rand;
-		rando_number = (rando_number % 10);
-		seed = (1664525 * seed + 1013904223) % (1U << 31);			  // 32-bit LCG
+		seed = (rando_number % 100);
+		seed = (1664525 * seed + 1013904223) % (1U << 31);			  // 32-bit LCG from my quasi-rando seed
 		return seed;
 }
 	
